@@ -3,8 +3,9 @@
 
 .about-main-container {
   @include flex-j-evenly-a-center;
-  margin: auto;
+  margin: inherit auto;
   @media screen and (min-width: 1024px) {
+    margin: inherit;
     padding-top: 60px;
   }
 }
