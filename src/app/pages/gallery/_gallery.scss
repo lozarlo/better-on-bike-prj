@@ -1,0 +1,28 @@
+@import "../../../styles/scss/utils/variables";
+@import "../../../styles/scss/utils/mixins";
+
+.gallery-cards-container {
+  @include column-flex-j-center-a-center;
+  flex-wrap: wrap;
+  gap: 4px;
+  @media screen and (min-width: 900px) {
+    @include flex-j-center-a-center;
+  }
+}
+
+.gallery-card-wrapper {
+  width: 80%;
+  border-radius: 20px;
+
+  @media screen and (min-width: 900px) {
+    width: 30%;
+    height: 450px;
+  }
+}
+
+.gallery-card-wrapper:hover {
+  transform: scale(1.1); /* Increase size by 10% */
+  transition: transform 0.2s ease-in-out; /* Smooth transition */
+  border-radius: 20px;
+  cursor: zoom-in;
+}

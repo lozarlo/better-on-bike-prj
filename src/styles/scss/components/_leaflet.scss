@@ -1,0 +1,40 @@
+@import "../../../styles/scss/utils/mixins";
+
+/* sizing of map container*/
+.leaflet-container {
+  z-index: 0;
+  height: 100%;
+  min-height: 350px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.55);
+  .leaflet-control {
+    flex-wrap: wrap;
+  }
+}
+
+.leaflet-control-attribution {
+  @include flex-j-center-a-center;
+  gap: 4px;
+}
+
+.leaflet-container h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  display: block;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  @include flex-j-center-a-center;
+}
+
+.leaflet-marker-icon:hover {
+  filter: hue-rotate(220deg) brightness(170%); /* Adjusts hue for yellow and increases brightness */
+}

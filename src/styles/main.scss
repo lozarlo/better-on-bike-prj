@@ -1,0 +1,37 @@
+// Utils
+@import "scss/utils/functions";
+@import "scss/utils/mixins";
+@import "scss/utils/variables";
+
+// Base
+@import "scss/base/reset";
+@import "scss/base/typography";
+@import "scss/base/elements";
+
+// Layout
+@import "scss/layout/body";
+
+// Shared Components
+@import "scss/components/common";
+@import "scss/components/icon";
+@import "scss/components/img";
+@import "scss/components/leaflet";
+
+// Single Components
+@import "../app/components/navbar/navbar";
+@import "../app/components/footer/footer";
+@import "../app/components/slideshow/slideshow";
+@import "../app/components/card/card";
+@import "../app/components/brandsection/brandSection";
+
+// Pages
+@import "../app/pages/home/home";
+@import "../app/pages/about/about";
+@import "../app/pages/location/location";
+@import "../app/pages/gallery/gallery";
+@import "../app/pages/error/error";
+
+
+// Animations
+
+// Themes

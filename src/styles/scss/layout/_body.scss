@@ -1,0 +1,8 @@
+@import "../../../styles/scss/utils/variables";
+@import "../../../styles/scss/utils/mixins";
+
+body {
+  overflow-x: hidden;
+  min-width: 280px;
+  background-color: $primary-color-yellow;
+}

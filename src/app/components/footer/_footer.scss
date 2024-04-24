@@ -1,0 +1,58 @@
+@import "../../../styles/scss/utils/variables";
+@import "../../../styles/scss/utils/mixins";
+
+.footer-container {
+  @include column-flex-j-center-a-center;
+  background-color: #000000;
+  gap: 1px;
+  font-size: 10px;
+  > * {
+    padding: 20px 40px;
+    white-space: nowrap;
+    line-height: 1.5;
+    @media screen and (min-width: 480px) {
+      p {
+        font-size: 10px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  svg:hover {
+    color: $primary-color-yellow;
+  }
+}
+
+.footer-wrapper {
+  @include flex-j-between-a-center;
+  width: 100%;
+  gap: 40px;
+  background-color: $bg-primary-lightblack;
+}
+
+.footer-logo-container {
+  @include flex-j-center-a-center;
+  width: 120px;
+}
+
+
+.social-links-wrapper {
+  @include column-flex-j-center-a-center;
+  gap: 10px;
+  color: $bg-secondary-darkwhite;
+}
+
+.social-links-list {
+  @include flex-j-center-a-center;
+  gap: 30px;
+}
+
+.sub-footer {
+  @include column-flex-j-center-a-center;
+  width: 100%;
+  color: $bg-secondary-darkwhite;
+  background-color: $bg-primary-lightblack;
+}

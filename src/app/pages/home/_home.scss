@@ -1,0 +1,47 @@
+@import "../../../styles/scss/utils/variables";
+@import "../../../styles/scss/utils/mixins";
+
+.hero-wrapper {
+  @include flex-j-center-a-center;
+  width: 100%;
+}
+
+.hero {
+  @include flex-j-center-a-center;
+  width: 100%;
+}
+
+.mid-section {
+  @include column-flex-j-center-a-center;
+  width: 100%;
+  gap: 60px;
+  margin: 60px 0;
+}
+
+.services-section {
+  @include column-flex-j-center-a-center;
+  gap: 10px;
+  width: calc(80% + 24px);
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.14); 
+  box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.14);
+}
+
+.enphatized-text {
+  display: inline;
+  color: $primary-color-yellow;
+  font-weight: bolder;
+  font-style: italic;
+  background-color: $bg-primary-lightblack;
+}
+
+.inner-element.enphatized-text {
+  background-color: initial;
+  font-size: inherit;
+}
+
+.inner-element.enphatized-text:hover {
+  text-decoration: underline 2px $primary-color-yellow;
+}

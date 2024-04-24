@@ -1,0 +1,11 @@
+[
+    {
+        "imgOne": "public/assets/images/home/home-hero.jpg"
+    },
+    {
+        "imgTwo": "public/assets/images/home/downhill-landscape.jpg"
+    },
+    {
+        "imgThree" : "public/assets/images/home/curve-landscape.jpg"
+    }
+]

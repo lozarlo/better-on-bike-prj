@@ -1,0 +1,137 @@
+@import "../../../styles/scss/utils/variables";
+@import "../../../styles/scss/utils/mixins";
+
+.header-container {
+  @include flex-j-center-a-center;
+}
+
+.navbar-container {
+  @include flex-j-center-a-center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: $bg-primary-lightblack;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+
+  @media screen and (min-width: 900px) {
+    height: 100px;
+    opacity: 0.8;
+    .main-logo {
+      opacity: 0.8;
+    }
+  }
+}
+
+.navbar-wrapper {
+  @include flex-j-center-a-center;
+  width: 100%;
+  height: 100%;
+  padding: 0 40px;
+}
+
+.navbar-content {
+  @include flex-j-center-a-center;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  gap: 20px;
+  margin: auto 0;
+}
+
+.navbar-left-content {
+  @include flex-j-fstart-a-center;
+  margin-right: auto;
+  width: auto;
+  gap: 10px;
+}
+
+.nav-logo-container {
+  @include flex-j-center-a-center;
+  background-color: transparent;
+  max-width: 80px;
+  @media screen and (min-width: 900px) {
+    max-width: 140px;
+  }
+}
+
+.navbar-right-content {
+  @include flex-j-center-a-center;
+  margin-left: auto;
+  width: 20%;
+  height: auto;
+}
+
+.navbar-list {
+  @include column-flex-j-center-a-center;
+  position: absolute;
+  display: none;
+  top: 42px;
+  right: 0;
+  gap: 10px;
+  width: 20%;
+  padding: 16px;
+  background-color: $bg-primary-lightblack;
+  @media screen and (min-width: 280px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 480px) {
+    gap: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    @include flex-j-center-a-center;
+    position: static;
+    width: auto;
+    padding: 0;
+  }
+}
+
+.list-element {
+  @include flex-j-center-a-center;
+  width: 100%;
+}
+
+.inner-element {
+  @include column-flex-j-center-a-center;
+  gap: 2px;
+  font-size: 0;
+  text-align: center;
+  text-wrap: nowrap;
+
+  @media screen and (min-width: 480px) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: 600px) {
+    font-size: 12px;
+  }
+}
+
+.inner-element:hover {
+  color: $primary-color-yellow;
+}
+
+.navbar-container:hover {
+  opacity: 1;
+  .main-logo {
+    opacity: 1;
+  }
+}
+
+.menu-button {
+  display: none;
+  justify-self: flex-end;
+  color: #fff;
+  background-color: transparent;
+  @media screen and (min-width: 280px) {
+    display: flex;
+  }
+}
+
+.menu-button:hover {
+  color: $primary-color-yellow;
+  cursor: pointer;
+}

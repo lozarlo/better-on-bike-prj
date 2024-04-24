@@ -1,0 +1,46 @@
+@import "../../../styles/scss/utils/variables";
+@import "../../../styles/scss/utils/mixins";
+
+.cards-container {
+  @include column-flex-j-center-a-center;
+  gap: 20px 40px;
+  border-radius: 20px;
+  min-width: calc(60%);
+  max-height: m200px;
+  -webkit-box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.14); 
+  box-shadow: 5px 5px 18px 5px rgba(0,0,0,0.14);
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    min-width: 40%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 40px 20px;
+  }
+}
+
+.card-wrapper {
+  @include flex-j-center-a-center;
+  max-width: 200px;
+  @media screen and (min-width: 768px) {
+    width: auto;
+  }
+}
+
+.card {
+  @include flex-j-center-a-center;
+  border-radius: 5px;
+  margin: 10px;
+  .brand-icon {
+    max-width: 100px;
+    max-height: 70px;
+  }
+  // @media screen and (min-width: 768px) {
+  //   max-width: 70px;
+  //   margin: 0;
+  // }
+
+  // @media screen and (min-width: 1024px) {
+  //   max-width: 80px;
+  // }
+}

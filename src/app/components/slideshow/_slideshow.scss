@@ -1,0 +1,27 @@
+@import "../../../styles/scss/utils/variables";
+@import "../../../styles/scss/utils/mixins";
+
+.slideshow-container {
+  @include flex-j-center-a-center;
+  width: 100%;
+  -webkit-box-shadow: 7px 5px 33px -8px #000000;
+  -moz-box-shadow: 7px 5px 33px -8px #000000;
+  -o-box-shadow: 7px 5px 33px -8px #000000;
+  box-shadow: 7px 5px 33px -8px #000000;
+}
+
+.slide {
+  width: 100%;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide-active {
+  @include flex-j-center-a-center;
+  opacity: 1;
+}
+
+.slide-hidden {
+  @include flex-j-center-a-center;
+  width: 0;
+  opacity: 0.8;
+}

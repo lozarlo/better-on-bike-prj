@@ -1,0 +1,54 @@
+@import "../../../styles/scss/utils/variables";
+@import "../../../styles/scss/utils/mixins";
+
+.about-main-container {
+  @include flex-j-evenly-a-center;
+  margin: auto;
+  @media screen and (min-width: 1024px) {
+    padding-top: 60px;
+  }
+}
+
+.contact-info {
+  @include column-flex-j-start-a-start;
+  gap: 0.5em;
+  width: 80%;
+
+  @media screen and (min-width: 600px) {
+    width: 60%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 90%;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 80%;
+  }
+}
+
+.contact-info-item {
+  @include flex-j-center-a-center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  text-align: start;
+  background: #b8b8b8;
+  width: 100%;
+}
+
+.contact-info-item:hover {
+  background-color: $primary-color-yellow;
+  transform: translateX(1.5em);
+  text-decoration: underline $bg-primary-lightblack;
+  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.section-map-wrapper {
+  min-width: 80%;
+  @media screen and (min-width: 768px) {
+    min-width: 50%;
+  }
+}
