@@ -2,11 +2,8 @@
 @import "../../../styles/scss/utils/mixins";
 
 .about-main-container {
-  @include flex-j-evenly-a-center;
-  margin: inherit auto;
-  @media screen and (min-width: 1024px) {
-    margin: inherit;
-    padding-top: 60px;
+  @media screen and (min-width: 768px) {
+    @include flex-j-evenly-a-center;
   }
 }
 

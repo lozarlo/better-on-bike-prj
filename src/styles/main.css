@@ -72,6 +72,11 @@ main {
     margin-top: 100px;
   }
 }
+@media screen and (min-width: 1920px) {
+  main {
+    margin: inherit auto;
+  }
+}
 
 section {
   padding: 0 40px;
@@ -603,17 +608,12 @@ span {
           text-decoration: underline 2px #f9db16;
 }
 
-.about-main-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: inherit auto;
-}
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .about-main-container {
-    margin: inherit;
-    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   }
 }
 
