@@ -610,9 +610,9 @@ span {
 
 .about-main-container section {
   padding: 0 10px;
-  margin: 10px auto 30px auto;
+  margin: auto;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .about-main-container section {
     padding: 0 40px;
     margin: auto;
@@ -679,27 +679,11 @@ span {
 
 .section-map-wrapper {
   min-width: 80%;
+  padding: 10px;
 }
 @media screen and (min-width: 768px) {
   .section-map-wrapper {
     min-width: 50%;
-  }
-}
-
-.location-main-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.location-main-container > * {
-  width: 80%;
-  height: 450px;
-}
-@media screen and (min-width: 480px) {
-  .location-main-container > * {
-    height: 500px;
   }
 }
 
@@ -708,6 +692,7 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 20px;
   flex-wrap: wrap;
   gap: 4px;
 }
