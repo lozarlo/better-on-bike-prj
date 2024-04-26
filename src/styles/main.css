@@ -592,10 +592,10 @@ span {
 
 .enphatized-text {
   display: inline;
-  color: #f9db16;
+  color: #1a1c20;
   font-weight: bolder;
   font-style: italic;
-  background-color: #1a1c20;
+  text-shadow: 3px 1px 2px rgba(249, 219, 22, 0.72);
 }
 
 .inner-element.enphatized-text {
@@ -604,10 +604,20 @@ span {
 }
 
 .inner-element.enphatized-text:hover {
-  -webkit-text-decoration: underline 2px #f9db16;
-          text-decoration: underline 2px #f9db16;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
 }
 
+.about-main-container section {
+  padding: 0 10px;
+  margin: 10px auto 30px auto;
+}
+@media screen and (min-width: 320px) {
+  .about-main-container section {
+    padding: 0 40px;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .about-main-container {
     display: flex;

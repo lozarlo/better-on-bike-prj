@@ -3,7 +3,7 @@ import Icon from "@mdi/react";
 import {
   mdiViewGalleryOutline,
   mdiInformationOutline,
-  mdiMapMarkerOutline,
+  // mdiMapMarkerOutline,
 } from "@mdi/js";
 import "../../../styles/main.css";
 import { NavLink } from "react-router-dom";
@@ -23,12 +23,12 @@ function NavMenu() {
           <span>Su di noi</span>
         </NavLink>
       </li>
-      <li className="list-element">
+      {/* <li className="list-element">
         <NavLink className="inner-element" to="/location">
           <Icon path={mdiMapMarkerOutline} title={"Location"} size={1} />
           <span>Mappa</span>
         </NavLink>
-      </li>
+      </li> */}
     </ul>
   );
 }
