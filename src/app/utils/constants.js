@@ -24,6 +24,3 @@ export const brandList = [
   { image: brandImgSix, link: "https://www.sidi.com/it/" },
   { image: brandImgSeven, link: "https://www.sportful.com/IT/it/" },
 ];
-
-//IT'S A TEST FOR BRANCH
-const branch = null;
