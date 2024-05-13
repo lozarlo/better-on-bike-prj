@@ -15,11 +15,11 @@ const galleryImgs = [
   { class: "gallery-img", alt: "vista negozio", title: "vista negozio", image: two },
   { class: "gallery-img", alt: "officina", title: "officina", image: three },
   { class: "gallery-img", alt: "vista negozio", title: "vista negozio", image: four },
-  { class: "gallery-img", alt: "", title: "", image: five },
+  { class: "gallery-img", alt: "accessori", title: "accessori", image: five },
   { class: "gallery-img", alt: "vista negozio", title: "vista negozio", image: six },
   { class: "gallery-img", alt: "vista negozio", title: "vista negozio", image: seven },
   { class: "gallery-img", alt: "accessori", title: "accessori", image: eight },
-  { class: "gallery-img", alt: "", title: "", image: nine }
+  { class: "gallery-img", alt: "vista negozio", title: "vista negozio", image: nine }
 ];
 
 function Gallery() {

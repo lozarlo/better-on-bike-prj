@@ -34,7 +34,7 @@ function About() {
             <div className="contact-info">
               <div className="contact-info-item">
                 <Icon path={mdiEmailArrowRight} size={1} />
-                <a href="mailto:info@example.com">info@example.com</a>
+                <a href="mailto:betteronbike@gmail.com">betteronbike@gmail.com</a>
               </div>
               <div className="contact-info-item">
                 <Icon path={mdiCellphoneBasic} size={1} />

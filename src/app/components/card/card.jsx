@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../styles/main.css";
 
 function Card(props) {
+  const [hoveredIndex, setHoveredIndex] = useState();
+  const [notHoveredClass, setNotHoveredClass] = useState();
+
+  const handleMouseHover = (index) => {
+    setHoveredIndex(index);
+    setNotHoveredClass("not-higlighted");
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+    setNotHoveredClass("");
+  };
+
   return (
     <>
       {props.iconList ? (
@@ -23,10 +36,23 @@ function Card(props) {
           ))}
         </div>
       ) : (
-        <div className="gallery-cards-container">
+        <div
+          className="gallery-cards-container"
+          onMouseLeave={handleMouseLeave}
+        >
           {props.galleryImgs.map((singleImage, index) => (
-            <div className="gallery-card-wrapper" key={index}>
-              <img className={singleImage.class} src={singleImage.image} alt={singleImage.alt} title={singleImage.title}></img>
+            <div
+              className={`gallery-card-wrapper ${
+                hoveredIndex === index ? "" : notHoveredClass}`}
+              key={index}
+              onMouseOver={() => handleMouseHover(index)}
+            >
+              <img
+                className={singleImage.class}
+                src={singleImage.image}
+                alt={singleImage.alt}
+                title={singleImage.title}
+              ></img>
             </div>
           ))}
         </div>
