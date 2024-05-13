@@ -709,14 +709,12 @@ span {
 }
 .gallery-card-wrapper .gallery-img {
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
-  height: 400px;
   border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media screen and (min-width: 900px) {
   .gallery-card-wrapper {
     width: 30%;
+    height: 450px;
   }
 }
 
