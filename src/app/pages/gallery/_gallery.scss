@@ -14,7 +14,9 @@
 .gallery-card-wrapper {
   width: 80%;
   border-radius: 20px;
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  img {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
 
   @media screen and (min-width: 900px) {
     width: 30%;
@@ -24,11 +26,13 @@
 
 .gallery-card-wrapper:hover {
   z-index: 1;
-  transform: scale(1.05);
-  border-radius: 20px;
   cursor: zoom-in;
-  -webkit-box-shadow: 5px 5px 31px 5px #000000; 
-  box-shadow: 5px 5px 31px 5px #000000;
+  img:hover {
+    transform: scale(1.05);
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 31px 5px #000000;
+    box-shadow: 5px 5px 31px 5px #000000;
+  }
 }
 
 .gallery-card-wrapper.not-higlighted {
