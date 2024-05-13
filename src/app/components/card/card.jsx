@@ -3,7 +3,7 @@ import "../../../styles/main.css";
 
 function Card(props) {
   const [hoveredIndex, setHoveredIndex] = useState();
-  const [notHoveredClass, setNotHoveredClass] = useState();
+  const [notHoveredClass, setNotHoveredClass] = useState("");
 
   const handleMouseHover = (index) => {
     setHoveredIndex(index);
