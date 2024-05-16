@@ -8,9 +8,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const routes = [
-  { url: '/', changefreq: 'daily', priority: 1.0 },
-  { url: '/about', changefreq: 'weekly', priority: 0.8 },
-  { url: '/gallery', changefreq: 'weekly', priority: 0.8 },
+  { url: '/', changefreq: 'daily', priority: 1.0, lastmod: new Date().toISOString() },
+  { url: '/about', changefreq: 'weekly', priority: 0.8, lastmod: new Date().toISOString() },
+  { url: '/gallery', changefreq: 'weekly', priority: 0.8, lastmod: new Date().toISOString() },
   // Aggiungi altre rotte se necessario
 ];
 
