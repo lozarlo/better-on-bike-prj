@@ -3,7 +3,10 @@ import { createWriteStream } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, resolve } from 'path';
 
-// Definisci le rotte del tuo sito
+// Ottieni il path corrente
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
 const routes = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
   { url: '/about', changefreq: 'weekly', priority: 0.8 },
@@ -11,21 +14,25 @@ const routes = [
   // Aggiungi altre rotte se necessario
 ];
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
 async function generateSitemap() {
   const sitemapStream = new SitemapStream({ hostname: 'https://betteronbike.netlify.app' });
   const writeStream = createWriteStream(resolve(__dirname, 'public', 'sitemap.xml'));
 
-  sitemapStream.pipe(writeStream);
+  try {
+    // Scrivi tutte le rotte nello stream della sitemap
+    routes.forEach(route => sitemapStream.write(route));
 
-  routes.forEach(route => sitemapStream.write(route));
-  sitemapStream.end();
+    sitemapStream.end();
 
-  await streamToPromise(sitemapStream);
+    // Attendi la promessa per completare lo stream e scrivere il file
+    const data = await streamToPromise(sitemapStream);
+    writeStream.write(data.toString());
+    writeStream.end();
 
-  console.log('Sitemap generata correttamente!');
+    console.log('Sitemap generata correttamente!');
+  } catch (error) {
+    console.error('Errore durante la generazione della sitemap:', error);
+  }
 }
 
 generateSitemap().catch(console.error);
