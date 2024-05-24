@@ -25,8 +25,8 @@ const bikeBrandList = [
 ];
 
 import wearBrandImgOne from "/assets/icons/brands/wear/abus-logo.png";
-import wearBrandImgThree from "/assets/icons/brands/wear/alecycling-logo.png";
 import wearBrandImgTwo from "/assets/icons/brands/wear/giro-logo.png";
+import wearBrandImgThree from "/assets/icons/brands/wear/alecycling-logo.png";
 import wearBrandImgFour from "/assets/icons/brands/wear/mavic-logo.png";
 import wearBrandImgFive from "/assets/icons/brands/wear/oxyburn-logo.png";
 import wearBrandImgSix from "/assets/icons/brands/wear/sidi-b-logo.png";
@@ -34,8 +34,8 @@ import wearBrandImgSeven from "/assets/icons/brands/wear/sportful-logo.png";
 
 const wearBrandList = [
   { id: "mobil-icon", class:"brand-icon", image: wearBrandImgOne, link: "https://mobil.abus.com/it" },
-  { id: "alecycling-icon", class:"brand-icon", image: wearBrandImgTwo, link: "https://alecycling.com/it/" },
   { id: "giro-icon", class:"brand-icon", image: wearBrandImgThree, link: "https://www.giro.com/" },
+  { id: "alecycling-icon", class:"brand-icon", image: wearBrandImgTwo, link: "https://alecycling.com/it/" },
   { id: "mavic-icon", class:"brand-icon", image: wearBrandImgFour, link: "https://www.mavic.com/it-it" },
   { id: "oxyburn-icon", class:"brand-icon", image: wearBrandImgFive, link: "https://www.oxyburn.it/" },
   { id: "sidi-icon", class:"brand-icon", image: wearBrandImgSix, link: "https://www.sidi.com/it/" },
