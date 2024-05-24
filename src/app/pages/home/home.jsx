@@ -34,8 +34,8 @@ import wearBrandImgSeven from "/assets/icons/brands/wear/sportful-logo.png";
 
 const wearBrandList = [
   { id: "mobil-icon", class:"brand-icon", image: wearBrandImgOne, link: "https://mobil.abus.com/it" },
-  { id: "giro-icon", class:"brand-icon", image: wearBrandImgThree, link: "https://www.giro.com/" },
-  { id: "alecycling-icon", class:"brand-icon", image: wearBrandImgTwo, link: "https://alecycling.com/it/" },
+  { id: "giro-icon", class:"brand-icon", image: wearBrandImgTwo, link: "https://www.giro.com/" },
+  { id: "alecycling-icon", class:"brand-icon", image: wearBrandImgThree, link: "https://alecycling.com/it/" },
   { id: "mavic-icon", class:"brand-icon", image: wearBrandImgFour, link: "https://www.mavic.com/it-it" },
   { id: "oxyburn-icon", class:"brand-icon", image: wearBrandImgFive, link: "https://www.oxyburn.it/" },
   { id: "sidi-icon", class:"brand-icon", image: wearBrandImgSix, link: "https://www.sidi.com/it/" },
